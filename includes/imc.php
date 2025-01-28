@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $categorie = "Obésité morbide ou massive";
         }
 
-        echo "<p>Votre IMC est de : <b>" . number_format($imc, 2) . "</b></p>";
+        echo "<p>Votre IMC est de : <b>" . number_format($imc, 1) . "</b></p>";
         echo "<p>Catégorie : <b>" . $categorie . "</b></p>";
     }
 }
