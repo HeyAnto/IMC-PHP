@@ -8,12 +8,12 @@
     <title>Calcul IMC</title>
 
     <link rel="icon" type="image/svg+xml" href="/assets/favico.svg">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
 </head>
 
 <body>
     <main>
-        <section class="flex flex-column mgt-20">
+        <section class="flex flex-column">
             <h1 style="text-align: center;">Calculer votre IMC</h1>
             <div class="flex flex-center">
                 <a class="btn-link" href="https://github.com/HeyAnto/IMC-PHP" target="_blank">
@@ -21,28 +21,28 @@
                     <img src="/assets/icon/icon-link.svg" alt="Icone">
                 </a>
             </div>
-            <form class="flex flex-column" method="POST" action="">
-                <div class="flex flex-column gap-5 mgt-20">
-                    <label id="age" for="age" class="form-label">Âge</label>
-                    <input type="number" name="age" step="1" required>
+            <form class="flex flex-column mt-20" method="POST" action="">
+                <div class="flex flex-column gap-5 mt-20">
+                    <label class="form-label" id="age" for="age" class="form-label">Âge</label>
+                    <input class="form-input" type="number" name="age" step="1" required>
                 </div>
-                <div class="flex flex-column gap-5 mgt-20">
-                    <label id="poids" for="poids" class="form-label">Poids (kg)</label>
-                    <input type="number" name="poids" step="0.1" required>
+                <div class="flex flex-column gap-5 mt-20">
+                    <label class="form-label" id="poids" for="poids" class="form-label">Poids (kg)</label>
+                    <input class="form-input" type="number" name="poids" step="1" required>
                 </div>
-                <div class="flex flex-column gap-5 mgt-20">
-                    <label id="taille" for="taille" class="form-label">Taille (cm)</label>
-                    <input type="number" name="taille" step="1" required>
+                <div class="flex flex-column gap-5 mt-20">
+                    <label class="form-label" id="taille" for="taille" class="form-label">Taille (cm)</label>
+                    <input class="form-input" type="number" name="taille" step="1" required>
                 </div>
-                <button class="btn primary-btn mgt-20" style="width: 100%;" type="submit">Calculer</button>
+                <button class="btn btn-primary mt-20" style="width: 100%;" type="submit">Calculer</button>
             </form>
-            <div class="flex flex-column gap-5 mgt-20">
+            <div class="flex flex-column gap-5 mt-20">
                 <?php include_once "includes/imc.php" ?>
             </div>
         </section>
-        <section class="mgt-50">
+        <section class="mt-50">
             <h2 style="text-align: center;">Tableau des catégories d'IMC</h2>
-            <table class=" imc-table mgt-20">
+            <table class="tableau mt-20">
                 <thead>
                     <tr>
                         <th>Indice de masse corporelle (IMC)</th>

@@ -1,0 +1,94 @@
+/* Boutons */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-regular);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Boutons Primaire */
+.btn-primary {
+  border: 2px solid var(--color-dark);
+  background-color: transparent;
+  color: var(--color-dark);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--color-dark);
+  color: var(--color-white);
+  transform: translateY(-3px);
+}
+
+/* Boutons Lien Externe */
+.btn-link {
+  width: fit-content;
+  color: var(--color-blue);
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: transparent solid 1px;
+}
+
+.btn-link:hover {
+  border-bottom: var(--color-blue) solid 1px;
+}
+
+.btn-link img {
+  height: 10px;
+}
+
+/* Formulaire */
+.form-label {
+  display: block;
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-regular);
+}
+
+.form-input {
+  padding: 10px 15px;
+  border: 1px solid var(--color-grey-dark);
+  outline: none;
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-regular);
+}
+
+.form-input:hover {
+  border-color: var(--blue-dark);
+}
+
+.form-input:focus {
+  border-color: var(--blue-dark);
+}
+
+/* Tableau */
+.tableau {
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-regular);
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.tableau th,
+.tableau td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid var(--color-dark);
+}
+
+.tableau th {
+  background-color: var(--color-grey-light);
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-bold);
+}
+
+.tableau tbody tr:nth-child(odd) {
+  background-color: var(--color-white);
+}
+
+.tableau tbody tr:nth-child(even) {
+  background-color: var(--color-grey-light);
+}
