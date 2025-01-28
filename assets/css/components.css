@@ -44,6 +44,7 @@
 /* Formulaire */
 .form-label {
   display: block;
+  font-family: var(--font-family);
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-regular);
 }
@@ -52,6 +53,7 @@
   padding: 10px 15px;
   border: 1px solid var(--color-grey-dark);
   outline: none;
+  font-family: var(--font-family);
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-regular);
 }
@@ -66,6 +68,7 @@
 
 /* Tableau */
 .tableau {
+  font-family: var(--font-family);
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-regular);
   text-align: left;
