@@ -41,14 +41,14 @@
 
                 <?php if (isset($erreur)): ?>
                     <div class="card-danger flex flex-column flex-center">
-                        <?= $erreur ?>
+                        <?php echo $erreur ?>
                     </div>
                 <?php endif; ?>
 
                 <?php if (isset($imc)): ?>
                     <div class="card-success flex flex-column">
-                        <p>Votre IMC est de : <b><?= number_format($imc, 1) ?></b></p>
-                        <p>Catégorie : <b><?= $categorie ?></b></p>
+                        <p>Votre IMC est de : <b><?php echo number_format($imc, 1) ?></b></p>
+                        <p>Catégorie : <b><?php echo $categorie ?></b></p>
                     </div>
                 <?php endif; ?>
             </div>
