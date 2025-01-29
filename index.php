@@ -23,15 +23,15 @@
             </div>
             <form class="flex flex-column mt-20" method="POST" action="">
                 <div class="flex flex-column gap-5 mt-20">
-                    <label class="form-label" id="age" for="age" class="form-label">Âge</label>
+                    <label class="form-label" id="age" for="age">Âge</label>
                     <input class="form-input" type="number" name="age" step="1" required>
                 </div>
                 <div class="flex flex-column gap-5 mt-20">
-                    <label class="form-label" id="poids" for="poids" class="form-label">Poids (kg)</label>
+                    <label class="form-label" id="poids" for="poids">Poids (kg)</label>
                     <input class="form-input" type="number" name="poids" step="0.1" required>
                 </div>
                 <div class="flex flex-column gap-5 mt-20">
-                    <label class="form-label" id="taille" for="taille" class="form-label">Taille (cm)</label>
+                    <label class="form-label" id="taille" for="taille">Taille (cm)</label>
                     <input class="form-input" type="number" name="taille" step="0.1" required>
                 </div>
                 <button class="btn btn-primary mt-20" style="width: 100%;" type="submit">Calculer</button>
