@@ -36,6 +36,11 @@
   --line-height-normal: 1.6; /* Paragraphe */
 }
 
+::selection {
+  color: var(--color-white);
+  background: var(--color-dark);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -95,13 +100,6 @@ p {
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-normal);
-}
-
-/* Mark */
-mark {
-  padding: 3px 8px;
-  border-radius: 3px;
-  background-color: var(--color-grey-light);
 }
 
 /* Media */
